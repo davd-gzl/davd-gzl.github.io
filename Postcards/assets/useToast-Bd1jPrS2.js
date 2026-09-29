@@ -1,0 +1,1 @@
+import{r as e}from"./uuid-CRrl6vOr.js";var t=1,n=e(e=>({toast:null,show:(n,r)=>e({toast:{id:t++,message:n,undo:r}}),dismiss:()=>e({toast:null})}));export{n as t};
