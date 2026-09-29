@@ -1,0 +1,1 @@
+(function(){function e(e){return e.normalize(`NFD`).replace(/\p{Diacritic}/gu,``).toLowerCase().trim()}let t=self;t.onmessage=n=>{(async()=>{try{let r=await fetch(n.data);if(!r.ok){t.postMessage(null);return}let i=(await r.json()).map(t=>({...t,search:e(t.name)})).sort((e,t)=>(t.population??0)-(e.population??0));t.postMessage(i)}catch{t.postMessage(null)}})()}})();

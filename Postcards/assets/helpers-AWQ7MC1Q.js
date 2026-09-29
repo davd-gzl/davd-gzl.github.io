@@ -1,0 +1,1 @@
+var e=`postcards`;function t(e){return`${e.kind}:${e.id}`}function n(e){let t=e.photos?[...e.photos]:[];e.photo&&!t.some(t=>t.src===e.photo)&&t.unshift({src:e.photo,caption:null});let{photo:n,...r}=e;return t.length?{...r,photos:t}:r}function r(e){return e.updatedAt?e:{...e,updatedAt:e.addedAt}}var i=()=>new Date().toISOString();export{i as a,t as i,r as n,n as r,e as t};

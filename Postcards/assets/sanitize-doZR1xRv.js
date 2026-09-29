@@ -1,0 +1,2 @@
+var e=new Set([`=`,`+`,`-`,`@`]);function t(e){let t=``;for(let n of e){let e=n.codePointAt(0);!(e>=0&&e<=31&&e!==9&&e!==10||e===127||e>=128&&e<=159)&&!(e===8203||e===8204||e===8205||e===8288||e===65279)&&!(e===8206||e===8207||e===1564)&&!(e>=8234&&e<=8238||e>=8294&&e<=8297)&&(t+=n)}return t}function n(n,r=2e3){let i=t(n.replace(/\r\n?/g,`
+`)).trim();for(;i.length>0&&(e.has(i[0])||i[0]===`	`);)i=i.slice(1).trimStart();return i.length>r&&(i=i.slice(0,r)),i}export{n as t};
